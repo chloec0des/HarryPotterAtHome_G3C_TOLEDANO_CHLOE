@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" afterDir="false" />
+    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="harry potter creation of my first classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/characters/AbstractEnemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/characters/Boss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/characters/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/characters/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Core.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/ForbiddenSpell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Potion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Spell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Wand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +38,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -36,7 +49,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2MsXl3QQZmnFsXRVgWrcBZZHL3w" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,6 +72,34 @@
       <option name="presentableId" value="Default" />
       <updated>1678557414590</updated>
     </task>
+    <task id="LOCAL-00001" summary="harry potter creation of my first classes">
+      <created>1678641296025</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678641296025</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="harry potter creation of my first classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="harry potter creation of my first classes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/game/Game.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/game/Game.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
