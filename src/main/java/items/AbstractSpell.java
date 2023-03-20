@@ -1,16 +1,14 @@
 package items;
 
 public abstract class AbstractSpell {
-    protected String name;
-    protected int damage;
-    protected int precision;
-    protected int requiredMagicLevel;
+    private String name;
+    private int damage;
+    private int accuracy;
 
-    public AbstractSpell(String name, int damage, int precision, int requiredMagicLevel) {
+    public AbstractSpell(String name, int damage, int accuracy) {
         this.name = name;
         this.damage = damage;
-        this.precision = precision;
-        this.requiredMagicLevel = requiredMagicLevel;
+        this.accuracy = accuracy;
     }
 
     public String getName() {
@@ -21,14 +19,9 @@ public abstract class AbstractSpell {
         return damage;
     }
 
-    public int getPrecision() {
-        return precision;
+    public int getAccuracy() {
+        return accuracy;
     }
 
-    public int getRequiredMagicLevel() {
-        return requiredMagicLevel;
-    }
-
-    public abstract void cast(Character caster, Character target);
 }
 

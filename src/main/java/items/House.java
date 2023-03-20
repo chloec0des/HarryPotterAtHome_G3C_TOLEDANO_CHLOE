@@ -1,4 +1,5 @@
 package items;
 
-public class House {
+public enum House {
+    GRYFFINDOR, SLYTHERIN, HUFFLEPUFF, RAVENCLAW
 }

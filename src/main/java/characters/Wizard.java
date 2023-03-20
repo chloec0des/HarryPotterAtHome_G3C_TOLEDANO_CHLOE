@@ -2,29 +2,19 @@ package characters;
 // Wizard.java
 public class Wizard extends Character {
     private House house;
-    private Pet pet;
     private Wand wand;
+    private Pet pet;
     private List<Spell> knownSpells;
     private List<Potion> potions;
 
-    public Wizard(String name, House house, Pet pet, Wand wand) {
-        super(name);
+    public Wizard(String name, int damage, int healthPoints, House house, Wand wand, Pet pet) {
+        super(name, damage, healthPoints);
         this.house = house;
-        this.pet = pet;
         this.wand = wand;
+        this.pet = pet;
         this.knownSpells = new ArrayList<>();
         this.potions = new ArrayList<>();
     }
 
-    // Getters and setters
-    // ...
-
-    public void learnSpell(Spell spell) {
-        this.knownSpells.add(spell);
-    }
-
-    public void addPotion(Potion potion) {
-        this.potions.add(potion);
-    }
+    // Add getters and setters for house, wand, pet, knownSpells, and potions
 }
-

@@ -45,23 +45,36 @@ public class Game {
     }
 
 
-    public class Game {
-        private Wizard player;
+    private Wizard player;
 
-        public Game() {
-        }
+    public Game() {
+    }
 
-        public void init() {
-            initWizard();
-            // Initialize other game objects here
-        }
+    public void init() {
+        initWizard();
+        // Initialize other game objects here
+    }
 
-        public void play() {
-            // Implement the game logic and levels here
-        }
+    public void play() {
+        // Implement the game logic and levels here
+    }
 
-        private void initWizard() {
-            // Initialize the player's Wizard object
-        }
+    private void initWizard() {
+        // Initialize the player's Wizard object
+    }
+    private void fifthLevel(Wizard wizard) {
+        Enemy enemy = new Enemy("Dolores Umbridge", 40, 500);
+        Spell spell = new Spell("SpellName", 50, 12);
+        Potion potion = new Potion("PotionName", 30, 20);
+
+        choiceIncrease(wizard, spell);
+        // Implement the choosePotion method in the Potion class
+        // potion.choosePotion(wizard, enemy, spell);
+
+        System.out.println("\nIt's time for the Universal Certificate of Elementary Witchcraft with " + enemy.getName());
+
+        universalCertificateOfElementaryWitchcraft(wizard, enemy);
+        choiceAttackLevel5(enemy.getDamage(), wizard, enemy, spell);
+        endingLevelFive(wizard, enemy, 5);
     }
 }

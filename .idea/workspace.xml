@@ -4,23 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="Game logic choice method">
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Level.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Randomizer.java" afterDir="false" />
+    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="Game logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/characters/AbstractEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/AbstractEnemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/characters/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Boss.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/characters/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/ForbiddenSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/ForbiddenSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/items/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Potion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/items/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Spell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Wand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +86,20 @@
       <option name="project" value="LOCAL" />
       <updated>1679319143336</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Game logic">
+      <created>1679350649681</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679350649681</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="harry potter creation of my first classes" />
     <MESSAGE value="Game logic choice method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game logic choice method" />
+    <MESSAGE value="Game logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game logic" />
   </component>
 </project>

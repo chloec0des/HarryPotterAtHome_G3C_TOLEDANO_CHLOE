@@ -1,4 +1,5 @@
 package items;
 
-public class Level {
+public abstract class Level {
+    // Level-specific logic and methods
 }

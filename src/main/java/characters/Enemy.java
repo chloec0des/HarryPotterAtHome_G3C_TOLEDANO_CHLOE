@@ -1,12 +1,7 @@
 package characters;
 
-public class Enemy extends AbstractEnemy {
-    public Enemy(String name, int health, int damage) {
-        super(name, health, damage);
-    }
-
-    @Override
-    public void attack(Character target) {
-        // Implement the enemy's attack logic here
+public class Enemy extends Character {
+    public Enemy(String name, int damage, int healthPoints) {
+        super(name, damage, healthPoints);
     }
 }
