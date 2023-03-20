@@ -1,25 +1,17 @@
 package items;
 
-public class Spell {
-    private String name;
-    private int damage;
-    private int precision;
+public class Spell extends AbstractSpell {
+    private int successRate;
 
-    public Spell(String name, int damage, int precision) {
-        this.name = name;
-        this.damage = damage;
-        this.precision = precision;
+    public Spell(String name, int damage, int successRate) {
+        super(name, damage);
+        this.successRate = successRate;
     }
 
-    public String getName() {
-        return name;
-    }
+    // Getters and setters
+    // ...
 
-    public int getDamage() {
-        return damage;
-    }
-
-    public int getPrecision() {
-        return precision;
+    public boolean cast() {
+        // Implement the logic to determine if the spell is successfully cast
     }
 }

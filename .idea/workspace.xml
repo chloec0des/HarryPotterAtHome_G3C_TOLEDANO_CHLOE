@@ -4,24 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="harry potter creation of my first classes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/characters/AbstractEnemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/characters/Boss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/characters/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/characters/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Core.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/ForbiddenSpell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/House.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Potion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Spell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Wand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Main.java" afterDir="false" />
+    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="Game logic choice method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Level.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Randomizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/AbstractEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/AbstractEnemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Boss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Spell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Wand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,9 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2MsXl3QQZmnFsXRVgWrcBZZHL3w" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -79,27 +81,19 @@
       <option name="project" value="LOCAL" />
       <updated>1678641296025</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Game logic choice method">
+      <created>1679319143336</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679319143336</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="harry potter creation of my first classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="harry potter creation of my first classes" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/game/Game.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/game/Game.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Game logic choice method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game logic choice method" />
   </component>
 </project>
