@@ -248,16 +248,40 @@ public class Game {
     }
 
     private void universalCertificateOfElementaryWitchcraft(Wizard wizard, Enemy enemy) {
-        // Implement universalCertificateOfElementaryWitchcraft logic
+        System.out.println("You must pass the Universal Certificate of Elementary Witchcraft against " + enemy.getName() + "!");
+        // Add more logic here as needed (e.g., answering questions or performing specific tasks)
     }
 
     private void choiceAttackLevel5(int enemyDamage, Wizard wizard, Enemy enemy, Spell spell) {
-        // Implement choiceAttackLevel5 logic
+        System.out.println("Choose your attack:");
+        System.out.println("1. Attack with " + spell.getName());
+        System.out.println("2. Use a defensive spell (e.g., Protego)");
+
+        int choice = readInt("Enter your choice (1-2): ", 2);
+
+        switch (choice) {
+            case 1:
+                // Wizard attacks enemy
+                enemy.takeDamage(spell.getDamage());
+                System.out.println("You dealt " + spell.getDamage() + " damage to the " + enemy.getName() + ".");
+                break;
+            case 2:
+                // Wizard uses a defensive spell
+                int reducedDamage = Math.max(0, enemyDamage - 10);
+                wizard.takeDamage(reducedDamage);
+                System.out.println("You used a defensive spell and took " + reducedDamage + " damage from the " + enemy.getName() + ".");
+                break;
+        }
     }
 
     private void endingLevelFive(Wizard wizard, Enemy enemy, int levelId) {
-        // Implement endingLevelFive logic
+        if (enemy.getHealthPoints() <= 0) {
+            System.out.println("You have successfully completed Level " + levelId + "! Congratulations!");
+        } else {
+            System.out.println("You couldn't defeat " + enemy.getName() + " in Level " + levelId + ". Better luck next time!");
+        }
     }
+
 
     // Add other methods as needed
 }
