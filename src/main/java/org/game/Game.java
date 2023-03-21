@@ -163,27 +163,27 @@ public class Game {
         Enemy enemy = new Enemy("Troll", 15, 50);
         System.out.println("\nIt's time for your exam! He is a " + enemy.getUsername());
         passSchoolYear(wizard, enemy);
+
         Spell spell = new Spell("Wingardium Leviosa", 25, 90);
         Potion potion = new Potion(40);
         battle(wizard, enemy, spell);
         choiceIncrease(wizard, spell);
         Potion chosenPotion = Potion.choosePotion();
         chosenPotion.use(wizard);
-        choiceAttackLevel5(enemy.getDamage(), wizard, enemy, spell);
-        endingLevelFive(wizard, enemy, 5);
+        anythingToContinue();
     }
 
     private void secondLevel(Wizard wizard) {
         // Chamber of secrets - Basilic
         Enemy enemy2 = new Enemy("Basilic", 20, 50);
-        Spell spell = new Spell("Accio", 25, 90);
+        Spell spell = new Spell("Accio", 25, 60);
         battle(wizard, enemy2, spell);
     }
 
     private void thirdLevel(Wizard wizard) {
         // Lac dans la Forêt Interdite - Détraqueurs
         Enemy enemy = new Enemy("Dementor", 25, 60);
-        Spell spell = new Spell("Expecto Patronum", 35, 85);
+        Spell spell = new Spell("Expecto Patronum", 35, 55);
         Potion potion = new Potion(40);
         battle(wizard, enemy, spell);
     }
@@ -196,8 +196,8 @@ public class Game {
         battle(wizard, enemy, spell);
     }
     private void fifthLevel(Wizard wizard) {
-        Enemy enemy5 = new Enemy("Dolores Umbridge", 40, 500);
-        Spell spell = new Spell("SpellName", 50, 12);
+        Enemy enemy5 = new Enemy("Dolores Umbridge", 40, 150);
+        Spell spell = new Spell("SpellName", 50, 40);
         Potion potion = new Potion(40);
         choiceIncrease(wizard, spell);
         Potion chosenPotion = Potion.choosePotion();
