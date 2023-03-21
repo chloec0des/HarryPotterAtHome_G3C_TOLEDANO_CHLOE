@@ -1,5 +1,7 @@
 package items;
 
+import java.util.Random;
+
 // Wand.java
 public class Wand {
     private Core core;
@@ -10,6 +12,10 @@ public class Wand {
         this.size = size;
     }
 
-    // Getters and setters
-    // ...
+    public Core getCore() {
+        return core;
+    }
+    public int getSize() {
+        return size;
+    }
 }

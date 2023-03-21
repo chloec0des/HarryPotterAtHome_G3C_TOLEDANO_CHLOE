@@ -22,6 +22,12 @@ public abstract class AbstractSpell {
     public int getAccuracy() {
         return accuracy;
     }
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
+    public void setAccuracy(int accuracy) {
+        this.accuracy = accuracy;
+    }
 
 }
 
