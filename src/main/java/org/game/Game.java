@@ -192,7 +192,19 @@ public class Game {
         Potion potion = new Potion(40);
         battle(wizard, enemy, spell);
     }
-
+    private void fifthLevel(Wizard wizard) {
+        Enemy enemy5 = new Enemy("Dolores Umbridge", 40, 500);
+        Spell spell = new Spell("SpellName", 50, 12);
+        Potion potion = new Potion(40);
+        choiceIncrease(wizard, spell);
+        Potion chosenPotion = Potion.choosePotion();
+        chosenPotion.use(wizard);
+        System.out.println("\nIt's time for the Universal Certificate of Elementary Witchcraft In" + enemy5.getUsername());
+        universalCertificateOfElementaryWitchcraft(wizard, enemy5);
+        choiceAttackLevel5(enemy5.getDamage(), wizard, enemy5, spell);
+        endingLevelFive(wizard, enemy5, 5);
+        battle(wizard, enemy5, spell);
+    }
     private void sixthLevel(Wizard wizard) {
         // Tour d'astronomie - Mangemorts
         Enemy enemy = new Enemy("Death Eaters", 35, 100);
@@ -204,23 +216,9 @@ public class Game {
     private void seventhLevel(Wizard wizard) {
         // Poudlard - Voldemort et Bellatrix Lestrange
         Enemy enemy = new Enemy("Voldemort and Bellatrix Lestrange", 40, 120);
-        Spell spell = new Spell("Expelliarmus", 50, 70);
+        Spell spell = new Spell("Expelliarmus", 60, 70);
         Potion potion = new Potion(40);
         battle(wizard, enemy, spell);
-    }
-
-
-    private void fifthLevel(Wizard wizard) {
-        Enemy enemy = new Enemy("Dolores Umbridge", 40, 500);
-        Spell spell = new Spell("SpellName", 50, 12);
-        Potion potion = new Potion(40);
-        choiceIncrease(wizard, spell);
-        Potion chosenPotion = Potion.choosePotion();
-        chosenPotion.use(wizard);
-        System.out.println("\nIt's time for the Universal Certificate of Elementary Witchcraft In" + enemy.getUsername());
-        universalCertificateOfElementaryWitchcraft(wizard, enemy);
-        choiceAttackLevel5(enemy.getDamage(), wizard, enemy, spell);
-        endingLevelFive(wizard, enemy, 5);
     }
 
     private void choiceIncrease(Wizard wizard, Spell spell) {
