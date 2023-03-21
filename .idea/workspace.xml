@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="Modification of Game (mainly)">
+    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="fixing problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/characters/AbstractEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/AbstractEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679393278208</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixing problems">
+      <created>1679394389033</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679394389033</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixing problems">
+      <created>1679394683400</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679394683400</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -105,7 +117,8 @@
     <MESSAGE value="Game logic choice method" />
     <MESSAGE value="Game logic" />
     <MESSAGE value="Modification of Game (mainly)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification of Game (mainly)" />
+    <MESSAGE value="fixing problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing problems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -43,7 +43,9 @@ public class Game {
     }
 
     public static void anythingToContinue() {
+
         System.out.println("\n Enter anything to continue...");
+        scanner.nextLine();
     }
 
     private Wizard wizard;
@@ -54,13 +56,6 @@ public class Game {
         printHeading("Harry Potter at Home - by Chloé Toledano");
         initWizard();
         play(wizard);
-        firstLevel(wizard);
-        secondLevel(wizard);
-        thirdLevel(wizard);
-        fourthLevel(wizard);
-        fifthLevel(wizard);
-        sixthLevel(wizard);
-        seventhLevel(wizard);
     }
 
     public void play(Wizard wizard) {
@@ -110,6 +105,7 @@ public class Game {
 
     private void initWizard() {
         // Initialize the wizard with default values
+        System.out.println("Enter your name: ");
         String name =scanner.nextLine();
         House house = SortingHat.randomHouse();
         Core[] cores = Core.values();
@@ -144,9 +140,7 @@ public class Game {
                     break;
                 case 2:
                     // Wizard uses a healing potion
-                    int healingAmount = 50;
-                    wizard.heal(healingAmount);
-                    System.out.println("You healed for " + healingAmount + " health points.");
+                    choosePotion(wizard, enemy, spell);
                     break;
             }
 
@@ -165,9 +159,18 @@ public class Game {
 
     private void firstLevel(Wizard wizard) {
         // Level 1 logic
+
         Enemy enemy = new Enemy("Troll", 15, 50);
+        System.out.println("\nIt's time for your exam! He is a " + enemy.getUsername());
+        passSchoolYear(wizard, enemy);
         Spell spell = new Spell("Wingardium Leviosa", 25, 90);
+        Potion potion = new Potion(40);
         battle(wizard, enemy, spell);
+        choiceIncrease(wizard, spell);
+        Potion chosenPotion = Potion.choosePotion();
+        chosenPotion.use(wizard);
+        choiceAttackLevel5(enemy.getDamage(), wizard, enemy, spell);
+        endingLevelFive(wizard, enemy, 5);
     }
 
     private void secondLevel(Wizard wizard) {
@@ -200,7 +203,7 @@ public class Game {
         Potion chosenPotion = Potion.choosePotion();
         chosenPotion.use(wizard);
         System.out.println("\nIt's time for the Universal Certificate of Elementary Witchcraft In" + enemy5.getUsername());
-        universalCertificateOfElementaryWitchcraft(wizard, enemy5);
+        passSchoolYear(wizard, enemy5);
         choiceAttackLevel5(enemy5.getDamage(), wizard, enemy5, spell);
         endingLevelFive(wizard, enemy5, 5);
         battle(wizard, enemy5, spell);
@@ -247,8 +250,8 @@ public class Game {
         System.out.println("You used a " + (potion.getHealAmount() == 25 ? "small" : "large") + " healing potion and regained " + potion.getHealAmount() + " HP. Your current HP is " + wizard.getHealthPoints() + ".");
     }
 
-    private void universalCertificateOfElementaryWitchcraft(Wizard wizard, Enemy enemy) {
-        System.out.println("You must pass the Universal Certificate of Elementary Witchcraft against " + enemy.getName() + "!");
+    private void passSchoolYear(Wizard wizard, Enemy enemy) {
+        System.out.println("You must defeat " + enemy.getName() + " to pass this school year!");
         // Add more logic here as needed (e.g., answering questions or performing specific tasks)
     }
 
