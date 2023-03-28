@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="adjustments on Game.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Fireworks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Sword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Potion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Wand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Randomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Randomizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679397982742</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adjustments on Game.java">
+      <created>1679965194813</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679965194813</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

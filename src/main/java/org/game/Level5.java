@@ -33,29 +33,14 @@ public class Level5 extends Level {
         Potion chosenPotion = Potion.choosePotion();
         chosenPotion.use(wizard);
 
-        // Check if fireworks are in inventory
+        // Add fireworks to inventory
         Inventory inventory = wizard.getInventory();
-        boolean hasFireworks = inventory.getItemByType(Fireworks.class) != null;
-        while (!hasFireworks) {
-            System.out.println("You defeated " + getEnemy().getName() + " but she has hidden the fireworks!");
-            Game.anythingToContinue();
-            Level.battle(wizard, super.getEnemy(), spell, Optional.empty());
-            if (wizard.getHealthPoints() <= 0) {
-                System.out.println("You have been defeated. Game over!");
-                return;
-            }
-            hasFireworks = inventory.getItemByType(Fireworks.class) != null;
-        }
-// If fireworks are in inventory, start the party
-        if (inventory.getItemByType(Fireworks.class) != null) {
-            inventory.removeItem(new Fireworks("Fireworks"));
-            System.out.println("You found the fireworks! Let the party begin!");
-            Level.endingLevel(wizard, getEnemy(), 5);
-        } else {
-            System.out.println("You defeated " + getEnemy().getName() + " but she has hidden the fireworks!");
-            Game.anythingToContinue();
-        }
+        inventory.addItem(new Fireworks("Fireworks"));
 
+        System.out.println("You defeated " + getEnemy().getName() + " and found some fireworks! Let's party! 🎉");
+
+        Level.endingLevel(wizard, getEnemy(), 5);
     }
+
 
 }

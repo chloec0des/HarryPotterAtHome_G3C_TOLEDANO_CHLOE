@@ -41,7 +41,6 @@ public abstract class Level {
     }
 
     public static void battle(Wizard wizard, Enemy enemy, Spell spell, Optional<Sword> sword) {
-        System.out.println("A wild " + enemy.getName() + " has appeared!");
 
         while (wizard.getHealthPoints() > 0 && enemy.getHealthPoints() > 0) {
             System.out.println("Your health: " + wizard.getHealthPoints() + " | Enemy health: " + enemy.getHealthPoints());

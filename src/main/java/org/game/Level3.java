@@ -23,8 +23,6 @@ public class Level3 extends Level {
 
         if (wizard.getHealthPoints() > 0) {
             Level.choiceIncrease(wizard, spell);
-            Potion chosenPotion = Potion.choosePotion();
-            chosenPotion.use(wizard);
             if (getEnemy().getHealthPoints() <= 0) {
                 Level.endingLevel(wizard, getEnemy(), 3);
             }
