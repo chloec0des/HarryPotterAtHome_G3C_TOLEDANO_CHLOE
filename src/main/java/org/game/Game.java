@@ -1,9 +1,10 @@
 package org.game;
+
+import characters.Wizard;
+import items.*;
+
 import java.util.Random;
 import java.util.Scanner;
-import characters.*;
-
-import items .*;
 
 public class Game {
     static Scanner scanner = new Scanner(System.in);
@@ -43,12 +44,11 @@ public class Game {
     }
 
     public static void anythingToContinue() {
-
-        System.out.println("\n Enter anything to continue...");
+        System.out.println("\nPress any key to continue...");
         scanner.nextLine();
     }
 
-    private Wizard wizard;
+    public static Wizard wizard;
 
     public void init() {
         clearConsole();
@@ -66,31 +66,38 @@ public class Game {
             System.out.println("Level " + currentLevel);
             // Call the appropriate level method based on the currentLevel.
             switch (currentLevel) {
-                case 1:
-                    firstLevel(wizard);
-                    break;
-                case 2:
-                    secondLevel(wizard);
-                    break;
-                case 3:
-                    thirdLevel(wizard);
-                    break;
-                case 4:
-                    fourthLevel(wizard);
-                    break;
-                case 5:
-                    fifthLevel(wizard);
-                    break;
-                case 6:
-                    sixthLevel(wizard);
-                    break;
-                case 7:
-                    seventhLevel(wizard);
-                    break;
-                default:
+                case 1 -> {
+                    Level1 level1 = new Level1();
+                    level1.playLevel(wizard);
+                }
+                case 2 -> {
+                    Level2 level2 = new Level2();
+                    level2.playLevel(wizard);
+                }
+                case 3 -> {
+                    Level3 level3 = new Level3();
+                    level3.playLevel(wizard);
+                }
+                case 4 -> {
+                    Level4 level4 = new Level4();
+                    level4.playLevel(wizard);
+                }
+                case 5 -> {
+                    Level5 level5 = new Level5();
+                    level5.playLevel(wizard);
+                }
+                case 6 -> {
+                    Level6 level6 = new Level6();
+                    level6.playLevel(wizard);
+                }
+                case 7 -> {
+                    Level7 level7 = new Level7();
+                    level7.playLevel(wizard);
+                }
+                default -> {
                     System.out.println("Congratulations! You have completed all the levels!");
                     isPlaying = false;
-                    break;
+                }
             }
 
             // Check if the wizard is still alive.
@@ -104,187 +111,45 @@ public class Game {
     }
 
     private void initWizard() {
+
         // Initialize the wizard with default values
         System.out.println("Enter your name: ");
-        String name =scanner.nextLine();
+        String name = scanner.nextLine();
+        anythingToContinue();
+
+        // Let the user know that their house, wand, and pet will be chosen for them
+        System.out.println("Initializing wizard... Your house, wand will now be chosen for you. You can chose your pet!");
         House house = SortingHat.randomHouse();
+        System.out.println("The Sorting Hat has placed you in " + house + " house!");
+        anythingToContinue();
+
         Core[] cores = Core.values();
         int randomCoreIndex = new Random().nextInt(cores.length);
         Core randomCore = cores[randomCoreIndex];
         int randomSize = new Random().nextInt(15) + 5;
         Wand wand = new Wand(randomCore, randomSize);
+        System.out.println("You have received a " + randomSize + " inch wand with a " + randomCore + " core.");
+        anythingToContinue();
+
+        System.out.println("Choose your pet:");
         Pet[] pets = Pet.values();
-        int randomPetIndex = new Random().nextInt(pets.length);
-        Pet randomPet = pets[randomPetIndex];
-        this.wizard = new Wizard(100, name, house, wand, randomPet);
+        for (int i = 0; i < pets.length; i++) {
+            System.out.println((i + 1) + ". " + pets[i]);
+        }
+        int petChoice = readInt("Enter the number corresponding to your desired pet (1-" + pets.length + "): ", pets.length);
+        Pet chosenPet = pets[petChoice - 1];
+        System.out.println("You have chosen a " + chosenPet + " as your pet.");
+        anythingToContinue();
+
+        wizard = new Wizard(100, name, house, wand, chosenPet);
         System.out.println("Welcome, " + wizard.getName() + "! Let's begin your adventure.");
         anythingToContinue();
     }
-
-    private void battle(Wizard wizard, Enemy enemy, Spell spell) {
-        System.out.println("A wild " + enemy.getName() + " has appeared!");
-
-        while (wizard.getHealthPoints() > 0 && enemy.getHealthPoints() > 0) {
-            System.out.println("Your health: " + wizard.getHealthPoints() + " | Enemy health: " + enemy.getHealthPoints());
-            System.out.println("Choose an action:");
-            System.out.println("1. Attack with " + spell.getName());
-            System.out.println("2. Use a healing potion");
-
-            int choice = readInt("Enter your choice (1-2): ", 2);
-
-            switch (choice) {
-                case 1:
-                    // Wizard attacks enemy
-                    enemy.takeDamage(spell.getDamage());
-                    System.out.println("You dealt " + spell.getDamage() + " damage to the " + enemy.getName() + ".");
-                    break;
-                case 2:
-                    // Wizard uses a healing potion
-                    choosePotion(wizard, enemy, spell);
-                    break;
-            }
-
-            // Check if the enemy is defeated
-            if (enemy.getHealthPoints() <= 0) {
-                System.out.println("You have defeated the " + enemy.getName() + "!");
-                break;
-            }
-
-            // Enemy attacks the wizard
-            wizard.takeDamage(enemy.getDamage());
-            System.out.println("The " + enemy.getName() + " dealt " + enemy.getDamage() + " damage to you.");
-        }
+    public static String readString(String prompt) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(prompt);
+        return scanner.nextLine();
     }
 
 
-    private void firstLevel(Wizard wizard) {
-        // Level 1 logic
-
-        Enemy enemy = new Enemy("Troll", 15, 50);
-        System.out.println("\nIt's time for your exam! He is a " + enemy.getUsername());
-        passSchoolYear(wizard, enemy);
-
-        Spell spell = new Spell("Wingardium Leviosa", 25, 90);
-        Potion potion = new Potion(40);
-        battle(wizard, enemy, spell);
-        choiceIncrease(wizard, spell);
-        Potion chosenPotion = Potion.choosePotion();
-        chosenPotion.use(wizard);
-        anythingToContinue();
-    }
-
-    private void secondLevel(Wizard wizard) {
-        // Chamber of secrets - Basilic
-        Enemy enemy2 = new Enemy("Basilic", 20, 50);
-        Spell spell = new Spell("Accio", 25, 60);
-        battle(wizard, enemy2, spell);
-    }
-
-    private void thirdLevel(Wizard wizard) {
-        // Lac dans la Forêt Interdite - Détraqueurs
-        Enemy enemy = new Enemy("Dementor", 25, 60);
-        Spell spell = new Spell("Expecto Patronum", 35, 55);
-        Potion potion = new Potion(40);
-        battle(wizard, enemy, spell);
-    }
-
-    private void fourthLevel(Wizard wizard) {
-        // Cimetière de Little Hangleton - Voldemort et Peter Pettigrow
-        Enemy enemy = new Enemy("Voldemort and Peter Pettigrow", 30, 80);
-        Spell spell = new Spell("Expelliarmus", 40, 80);
-        Potion potion = new Potion(40);
-        battle(wizard, enemy, spell);
-    }
-    private void fifthLevel(Wizard wizard) {
-        Enemy enemy5 = new Enemy("Dolores Umbridge", 40, 150);
-        Spell spell = new Spell("SpellName", 50, 40);
-        Potion potion = new Potion(40);
-        choiceIncrease(wizard, spell);
-        Potion chosenPotion = Potion.choosePotion();
-        chosenPotion.use(wizard);
-        System.out.println("\nIt's time for the Universal Certificate of Elementary Witchcraft In" + enemy5.getUsername());
-        passSchoolYear(wizard, enemy5);
-        choiceAttackLevel5(enemy5.getDamage(), wizard, enemy5, spell);
-        endingLevelFive(wizard, enemy5, 5);
-        battle(wizard, enemy5, spell);
-    }
-    private void sixthLevel(Wizard wizard) {
-        // Tour d'astronomie - Mangemorts
-        Enemy enemy = new Enemy("Death Eaters", 35, 100);
-        Spell spell = new Spell("Stupefy", 45, 75);
-        Potion potion = new Potion(40);
-        battle(wizard, enemy, spell);
-    }
-
-    private void seventhLevel(Wizard wizard) {
-        // Poudlard - Voldemort et Bellatrix Lestrange
-        Enemy enemy = new Enemy("Voldemort and Bellatrix Lestrange", 40, 120);
-        Spell spell = new Spell("Expelliarmus", 60, 70);
-        Potion potion = new Potion(40);
-        battle(wizard, enemy, spell);
-    }
-
-    private void choiceIncrease(Wizard wizard, Spell spell) {
-        System.out.println("Choose a spell attribute to increase:");
-        System.out.println("1. Increase spell damage by 10");
-        System.out.println("2. Increase spell accuracy by 5%");
-
-        int choice = readInt("Enter your choice (1-2): ", 2);
-
-        switch (choice) {
-            case 1:
-                spell.setDamage(spell.getDamage() + 10);
-                System.out.println("Spell damage increased to " + spell.getDamage() + ".");
-                break;
-            case 2:
-                int newAccuracy = Math.min(spell.getAccuracy() + 5, 100);
-                spell.setAccuracy(newAccuracy);
-                System.out.println("Spell accuracy increased to " + newAccuracy + "%.");
-                break;
-        }
-    }
-
-    private void choosePotion(Wizard wizard, Enemy enemy, Spell spell) {
-        Potion potion = Potion.choosePotion();
-        potion.use(wizard);
-        System.out.println("You used a " + (potion.getHealAmount() == 25 ? "small" : "large") + " healing potion and regained " + potion.getHealAmount() + " HP. Your current HP is " + wizard.getHealthPoints() + ".");
-    }
-
-    private void passSchoolYear(Wizard wizard, Enemy enemy) {
-        System.out.println("You must defeat " + enemy.getName() + " to pass this school year!");
-        // Add more logic here as needed (e.g., answering questions or performing specific tasks)
-    }
-
-    private void choiceAttackLevel5(int enemyDamage, Wizard wizard, Enemy enemy, Spell spell) {
-        System.out.println("Choose your attack:");
-        System.out.println("1. Attack with " + spell.getName());
-        System.out.println("2. Use a defensive spell (e.g., Protego)");
-
-        int choice = readInt("Enter your choice (1-2): ", 2);
-
-        switch (choice) {
-            case 1:
-                // Wizard attacks enemy
-                enemy.takeDamage(spell.getDamage());
-                System.out.println("You dealt " + spell.getDamage() + " damage to the " + enemy.getName() + ".");
-                break;
-            case 2:
-                // Wizard uses a defensive spell
-                int reducedDamage = Math.max(0, enemyDamage - 10);
-                wizard.takeDamage(reducedDamage);
-                System.out.println("You used a defensive spell and took " + reducedDamage + " damage from the " + enemy.getName() + ".");
-                break;
-        }
-    }
-
-    private void endingLevelFive(Wizard wizard, Enemy enemy, int levelId) {
-        if (enemy.getHealthPoints() <= 0) {
-            System.out.println("You have successfully completed Level " + levelId + "! Congratulations!");
-        } else {
-            System.out.println("You couldn't defeat " + enemy.getName() + " in Level " + levelId + ". Better luck next time!");
-        }
-    }
-
-
-    // Add other methods as needed
 }

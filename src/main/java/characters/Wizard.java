@@ -1,14 +1,7 @@
 package characters;
 
-import items.House;
-import items.Pet;
-import items.Spell;
-import items.Wand;
-import items.Potion;
+import items.*;
 
-
-
-// Wizard.java
 import java.util.Random;
 
 public class Wizard extends Character {
@@ -17,6 +10,7 @@ public class Wizard extends Character {
     private Pet pet;
     private int maxHealthPoints;
     private int HP;
+    private Inventory inventory;
 
     public Wizard(int HP, String name, House house, Wand wand, Pet pet) {
         super(name,40, 100);
@@ -25,62 +19,68 @@ public class Wizard extends Character {
         this.wand = wand;
         this.pet = pet;
         this.maxHealthPoints = 100;
+        this.inventory = new Inventory();
+        initHouseItems();
     }
-    public void wizardTakeDamage(int damage) {
-        this.HP -= damage;
-        System.out.println("The wizard took " + damage + " points of damage.");
-        System.out.println("The wizard's remaining HP is " + this.HP + ".");
+    public Inventory getInventory() {
+        return inventory;
     }
 
+    private void initHouseItems() {
+        switch (house.getName()) {
+            case "Gryffindor":
+                Sword sword = new Sword("Gryffindor Sword", 100);
+                inventory.addItem(sword);
+                break;
+
+        }
+    }
     public void attackEnemy(Enemy enemy, Spell spell) {
         Random random = new Random();
         double accuracy = spell.getAccuracy();
+        int damage = spell.getDamage();
 
-        // Adjust accuracy based on the wizard's house
+        // Apply house-specific effects
         switch (house.getName()) {
             case "Slytherin":
-                accuracy *= 1.10;
+                damage *= 1.2; // Spells deal 20% more damage for Slytherin wizards
                 break;
             case "Gryffindor":
-                accuracy *= 1.05;
+                maxHealthPoints = 120; // Gryffindor wizards have 20 more max health points
                 break;
             case "Hufflepuff":
-                accuracy *= 1.00;
+                heal(10); // Hufflepuff wizards heal for an additional 10 HP when using a potion
                 break;
             case "Ravenclaw":
-                accuracy *= 0.95;
+                accuracy *= 1.1; // Spells are 10% more accurate for Ravenclaw wizards
                 break;
         }
-
         if (random.nextDouble() * 100 <= accuracy) {
-            enemy.takeDamage(spell.getDamage());
-            System.out.println("You cast " + spell.getName() + " and dealt " + spell.getDamage() + " damage to " + enemy.getUsername() + ".");
+            enemy.takeDamage(damage);
+            System.out.println("You cast " + spell.getName() + " and dealt " + damage + " damage to " + enemy.getUsername() + ".");
         } else {
             System.out.println("You missed the spell!");
         }
     }
     public void heal(int healAmount) {
         setHealthPoints(Math.min(getHealthPoints() + healAmount, maxHealthPoints));
+
     }
     public void takeDamage(int damage) {
-        setHealthPoints(Math.max(getHealthPoints() - damage, 0));
+        int finalDamage = damage;
+        switch (house.getName()) {
+            case "Gryffindor":
+                finalDamage = (int) (damage * 0.8);
+                System.out.println("Because you're in Griffondor, you're damage is decreased by a factor of 0.8");
+                break;
+            default:
+                break;
+        }
+        setHealthPoints(Math.max(getHealthPoints() - finalDamage, 0));
     }
 
-    public void defend(Enemy enemy) {
-        takeDamage(enemy.getDamage());
-        System.out.println("You took " + enemy.getDamage() + " damage from " + enemy.getUsername() + ".");
-    }
 
-    public void usePotion(Potion potion) {
-        int healAmount = potion.getHealAmount();
-        setHealthPoints(Math.min(getHealthPoints() + healAmount, maxHealthPoints));
-        System.out.println("You used a healing potion and regained " + healAmount + " HP. Your current HP is " + getHealthPoints() + ".");
-    }
     public House getHouse() {
         return house;
-    }
-
-    public void setHouse(House house) {
-        this.house = house;
     }
 }

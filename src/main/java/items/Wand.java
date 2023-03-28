@@ -1,7 +1,5 @@
 package items;
 
-import java.util.Random;
-
 // Wand.java
 public class Wand {
     private Core core;

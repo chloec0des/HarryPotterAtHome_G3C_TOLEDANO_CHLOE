@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="adjustments on Game.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Fireworks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Sword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Wand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Randomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Randomizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +41,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2cb5d9c7-d2f6-4c30-a801-a3f946b0a455" />
+        <option name="url" value="https://github.com/chloec0des/HarryPotterAtHome_G3C_TOLEDANO.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,9 +80,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/chloetoledano/IdeaProjects_JAVA/HarryPotterAtHome_G3C_TOLEDANO/src/main"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -115,8 +154,26 @@
       <option name="project" value="LOCAL" />
       <updated>1679397489288</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adjustments on Game.java">
+      <created>1679397982742</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679397982742</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="harry potter creation of my first classes" />
@@ -126,16 +183,5 @@
     <MESSAGE value="fixing problems" />
     <MESSAGE value="adjustments on Game.java" />
     <option name="LAST_COMMIT_MESSAGE" value="adjustments on Game.java" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/characters/Wizard.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -1,5 +1,7 @@
 package items;
 
+import java.util.Random;
+
 public abstract class AbstractSpell {
     private String name;
     private int damage;
@@ -29,5 +31,9 @@ public abstract class AbstractSpell {
         this.accuracy = accuracy;
     }
 
+    public boolean hasFailed() {
+        Random random = new Random();
+        int randomNumber = random.nextInt(100) + 1;
+        return randomNumber > accuracy;
+    }
 }
-

@@ -1,5 +1,5 @@
 package items;
-import characters.*;
+
 import java.util.Random;
 
 public class SortingHat {

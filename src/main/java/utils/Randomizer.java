@@ -1,6 +1,5 @@
 package utils;
 
-import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Randomizer {
