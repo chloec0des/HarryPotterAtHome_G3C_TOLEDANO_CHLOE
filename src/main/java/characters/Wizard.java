@@ -83,4 +83,7 @@ public class Wizard extends Character {
     public House getHouse() {
         return house;
     }
+    public Wand getWand() {
+        return wand;
+    }
 }
