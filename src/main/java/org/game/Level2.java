@@ -2,10 +2,7 @@ package org.game;
 
 import characters.Enemy;
 import characters.Wizard;
-import items.House;
-import items.Potion;
-import items.Spell;
-import items.Sword;
+import items.*;
 
 import java.util.Optional;
 
@@ -34,10 +31,17 @@ public class Level2 extends Level {
             Potion chosenPotion = Potion.choosePotion();
             chosenPotion.use(wizard);
             if (getEnemy().getHealthPoints() <= 0) {
+                System.out.println("You have successfully defeated the Basilisk!");
+                learnPatronus(wizard);
                 Level.endingLevel(wizard, getEnemy(), 2);
             }
         }
         swordOptional.ifPresent(s -> wizard.getInventory().removeItem(s));
     }
-
+    private void learnPatronus(Wizard wizard) {
+        System.out.println("Congratulations on defeating the Basilisk! You have unlocked the ability to cast a Patronus.");
+        Patronus patronus = new Patronus(Game.readString("What animal would you like your Patronus to be?"), 50);
+        wizard.getInventory().addItem(patronus);
+        System.out.println("You have learned to cast Expecto Patronum, and your Patronus has been added to your inventory.");
+    }
 }

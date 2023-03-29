@@ -89,7 +89,7 @@ public abstract class Level {
 
             // Check if the wizard is dead
             if (wizard.getHealthPoints() <= 0) {
-                System.out.println("You have been defeated by the " + enemy.getName() + ". Game Over!");
+                System.out.println("You have been defeated by the " + enemy.getName());
                 break;
             }
         }
@@ -107,7 +107,7 @@ public abstract class Level {
                 System.out.println("Spell damage increased to " + spell.getDamage() + ".");
                 break;
             case 2:
-                int newAccuracy = Math.min(spell.getAccuracy() + 5, 100);
+                double newAccuracy = Math.min(spell.getAccuracy() + 5, 100);
                 spell.setAccuracy(newAccuracy);
                 System.out.println("Spell accuracy increased to " + newAccuracy + "%.");
                 break;

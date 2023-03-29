@@ -5,9 +5,9 @@ import items.*;
 import java.util.Random;
 
 public class Wizard extends Character {
-    private House house;
+    private final House house;
     private Wand wand;
-    private Pet pet;
+    private final Pet pet;
     private int maxHealthPoints;
     private int HP;
     private Inventory inventory;
@@ -38,7 +38,7 @@ public class Wizard extends Character {
     public void attackEnemy(Enemy enemy, Spell spell) {
         Random random = new Random();
         double accuracy = spell.getAccuracy();
-        int damage = spell.getDamage();
+        double damage = spell.getDamage();
 
         // Apply house-specific effects
         switch (house.getName()) {
@@ -56,7 +56,7 @@ public class Wizard extends Character {
                 break;
         }
         if (random.nextDouble() * 100 <= accuracy) {
-            enemy.takeDamage(damage);
+            enemy.takeDamage((int) damage);
             System.out.println("You cast " + spell.getName() + " and dealt " + damage + " damage to " + enemy.getUsername() + ".");
         } else {
             System.out.println("You missed the spell!");

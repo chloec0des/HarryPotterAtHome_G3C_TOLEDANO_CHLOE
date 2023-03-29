@@ -1,4 +1,5 @@
 package org.game;
+
 import characters.Enemy;
 import characters.Wizard;
 import items.Potion;
@@ -18,25 +19,31 @@ public class Level6 extends Level {
 
         // Perform level-specific gameplay mechanics here
         Spell spell = new Spell("Sectumsempra", 30, 50);
+
         if (wizard.getHouse().getName().equals("Slytherin")) {
             System.out.println("As a member of Slytherin, you have the option to ally with the Death Eaters. ");
             String allyChoice = Game.readString("Will you ally with them? (y/n)");
+
             if (allyChoice.equalsIgnoreCase("y")) {
                 super.setEnemy(new Enemy("Death Eater", 70, 200));
                 System.out.println("You have allied with the Death Eaters.");
-            }
-            if (allyChoice.equalsIgnoreCase("y")) {
+            } else {
                 System.out.println("You have chosen not to ally with the Death Eaters.");
                 Level.battle(wizard, super.getEnemy(), spell, Optional.empty());
             }
         }
-        if (wizard.getHealthPoints() > 0) {
-            Level.choiceIncrease(wizard, spell);
-            Potion chosenPotion = Potion.choosePotion();
-            chosenPotion.use(wizard);
-            if (getEnemy().getHealthPoints() <= 0) {
-                Level.endingLevel(wizard, getEnemy(), 6);
-            }
+
+        if (wizard.getHealthPoints() <= 0) {
+            System.out.println("You have been defeated. Game over!");
+            return;
+        }
+
+        Level.choiceIncrease(wizard, spell);
+        Potion chosenPotion = Potion.choosePotion();
+        chosenPotion.use(wizard);
+
+        if (getEnemy().getHealthPoints() <= 0) {
+            Level.endingLevel(wizard, getEnemy(), 6);
         }
     }
 }

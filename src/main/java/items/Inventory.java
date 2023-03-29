@@ -30,5 +30,8 @@ public class Inventory {
         }
         return null;
     }
+    public void addPatronus(Patronus patronus) {
+        items.add(patronus);
+    }
 
 }

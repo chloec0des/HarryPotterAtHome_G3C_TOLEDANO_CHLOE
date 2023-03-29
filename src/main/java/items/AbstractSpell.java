@@ -4,10 +4,10 @@ import java.util.Random;
 
 public abstract class AbstractSpell {
     private String name;
-    private int damage;
-    private int accuracy;
+    private double damage;
+    private double accuracy;
 
-    public AbstractSpell(String name, int damage, int accuracy) {
+    public AbstractSpell(String name, double damage, double accuracy) {
         this.name = name;
         this.damage = damage;
         this.accuracy = accuracy;
@@ -17,23 +17,19 @@ public abstract class AbstractSpell {
         return name;
     }
 
-    public int getDamage() {
+    public double getDamage() {
         return damage;
     }
 
-    public int getAccuracy() {
+    public double getAccuracy() {
         return accuracy;
     }
-    public void setDamage(int damage) {
+    public void setDamage(double damage) {
         this.damage = damage;
     }
-    public void setAccuracy(int accuracy) {
+    public void setAccuracy(double accuracy) {
         this.accuracy = accuracy;
     }
 
-    public boolean hasFailed() {
-        Random random = new Random();
-        int randomNumber = random.nextInt(100) + 1;
-        return randomNumber > accuracy;
-    }
+
 }

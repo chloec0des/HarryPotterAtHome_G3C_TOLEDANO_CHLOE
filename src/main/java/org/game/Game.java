@@ -128,7 +128,7 @@ public class Game {
         Core randomCore = cores[randomCoreIndex];
         int randomSize = new Random().nextInt(15) + 5;
         Wand wand = new Wand(randomCore, randomSize);
-        System.out.println("You have received a " + randomSize + " inch wand with a " + randomCore + " core.");
+        System.out.println("You have received a " + randomSize + " inch wand with a " + randomCore.getName() + " core.");
         anythingToContinue();
 
         System.out.println("Choose your pet:");

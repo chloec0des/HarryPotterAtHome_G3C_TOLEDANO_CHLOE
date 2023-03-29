@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="Level5.java">
+    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="Level7.java + creation of Voldemort wand">
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Patronus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Wand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Wand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/AbstractSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Level.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Spell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +72,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/chloetoledano/IdeaProjects_JAVA/HarryPotterAtHome_G3C_TOLEDANO/src/main"
+    "last_opened_file_path": "/Users/chloetoledano/IdeaProjects_JAVA/HarryPotterAtHome_G3C_TOLEDANO/src/main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -158,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679988870814</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Level7.java + creation of Voldemort wand">
+      <created>1680051644609</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680051644609</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +198,18 @@
     <MESSAGE value="fixing problems" />
     <MESSAGE value="adjustments on Game.java" />
     <MESSAGE value="Level5.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Level5.java" />
+    <MESSAGE value="Level7.java + creation of Voldemort wand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Level7.java + creation of Voldemort wand" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/game/Game.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
