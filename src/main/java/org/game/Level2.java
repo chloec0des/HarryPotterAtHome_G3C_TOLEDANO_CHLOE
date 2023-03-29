@@ -40,7 +40,7 @@ public class Level2 extends Level {
     }
     private void learnPatronus(Wizard wizard) {
         System.out.println("Congratulations on defeating the Basilisk! You have unlocked the ability to cast a Patronus.");
-        Patronus patronus = new Patronus(Game.readString("What animal would you like your Patronus to be?"), 50);
+        Patronus patronus = new Patronus(Game.readString("Enter to learn your Patronum and finish this second year! Remember, this spell will be useful later... Sooner than you imagine"), 50);
         wizard.getInventory().addItem(patronus);
         System.out.println("You have learned to cast Expecto Patronum, and your Patronus has been added to your inventory.");
     }

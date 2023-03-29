@@ -2,7 +2,6 @@ package org.game;
 
 import characters.Enemy;
 import characters.Wizard;
-import items.Potion;
 import items.Spell;
 import items.Patronus;
 
@@ -11,6 +10,7 @@ import java.util.Optional;
 public class Level3 extends Level {
 
     public Level3() {
+
         super("Level 3", "Forbidden Forest", new Enemy("Dementor", 30, 100));
     }
 
@@ -22,6 +22,8 @@ public class Level3 extends Level {
         Spell spell = new Spell("Expecto Patronum", 40, 30);
         if (wizard.getInventory().getItemByType(Patronus.class) == null) {
             System.out.println("You don't have a Patronus yet. Go back to Level 2 to learn how to cast one.");
+            Level2 level2 = new Level2();
+            level2.playLevel(wizard);
         } else {
             System.out.println("You cast Expecto Patronum, and a " + wizard.getInventory().getItemByType(Patronus.class).getName() + " Patronus appears!");
             if (wizard.getHouse().getName().equals("Gryffindor")) {
