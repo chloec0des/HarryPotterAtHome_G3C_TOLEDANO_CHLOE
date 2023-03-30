@@ -57,9 +57,9 @@ public class Wizard extends Character {
         }
         if (random.nextDouble() * 100 <= accuracy) {
             enemy.takeDamage((int) damage);
-            System.out.println("You cast " + spell.getName() + " and dealt " + damage + " damage to " + enemy.getUsername() + ".");
+            display.printMessage("You cast " + spell.getName() + " and dealt " + damage + " damage to " + enemy.getUsername() + ".");
         } else {
-            System.out.println("You missed the spell!");
+            display.printMessage("You missed the spell!");
         }
     }
     public void heal(int healAmount) {
@@ -71,7 +71,7 @@ public class Wizard extends Character {
         switch (house.getName()) {
             case "Gryffindor":
                 finalDamage = (int) (damage * 0.8);
-                System.out.println("Because you're in Griffondor, you're damage is decreased by a factor of 0.8");
+                display.printMessage("Because you're in Griffondor, you're damage is decreased by a factor of 0.8");
                 break;
             default:
                 break;

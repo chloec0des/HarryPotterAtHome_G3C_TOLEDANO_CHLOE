@@ -1,7 +1,10 @@
 package items;
 
+import org.game.Display;
+
 public abstract class Item {
     private String name;
+    static Display display = new Display();
 
     public Item(String name) {
         this.name = name;

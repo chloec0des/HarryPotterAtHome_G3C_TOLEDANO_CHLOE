@@ -15,8 +15,8 @@ public class Level1 extends Level {
     }
 
     public void playLevel(Wizard wizard) {
-        System.out.println("Welcome to " + Game.wizard.getName() + " at " + getLocation() + "!");
-        System.out.println("You are facing a wild " + super.getEnemy().getName() + " that has appeared!");
+        display.printMessage("Welcome to " + Game.wizard.getName() + " at " + getLocation() + "!");
+        display.printMessage("You are facing a wild " + super.getEnemy().getName() + " that has appeared!");
 
         // Perform level-specific gameplay mechanics here
         Spell spell = new Spell("Wingardium Leviosa", 25, 60);

@@ -1,9 +1,12 @@
 package characters;
 
+import org.game.Display;
+
 public abstract class Character {
     private String name;
     private int damage;
     private int healthPoints;
+    static Display display = new Display();
 
     public Character(String name, int damage, int healthPoints) {
         this.name = name;

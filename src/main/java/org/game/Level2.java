@@ -15,8 +15,8 @@ public class Level2 extends Level {
 
 
     public void playLevel(Wizard wizard) {
-        System.out.println("Welcome back for this new year " + getName() + " in the " + getLocation() + "!");
-        System.out.println("You are facing a wild " + getEnemy().getName() + " that has appeared!");
+        display.printMessage("Welcome back for this new year " + getName() + " in the " + getLocation() + "!");
+        display.printMessage("You are facing a wild " + getEnemy().getName() + " that has appeared!");
 
         // Perform level-specific gameplay mechanics here
         Spell spell = new Spell("Accio", 25, 40);
@@ -28,10 +28,8 @@ public class Level2 extends Level {
         Level.battle(wizard, getEnemy(), spell, swordOptional);
         if (wizard.getHealthPoints() > 0) {
             Level.choiceIncrease(wizard, spell);
-            Potion chosenPotion = Potion.choosePotion();
-            chosenPotion.use(wizard);
             if (getEnemy().getHealthPoints() <= 0) {
-                System.out.println("You have successfully defeated the Basilisk!");
+                display.printMessage("You have successfully defeated the Basilisk!");
                 learnPatronus(wizard);
                 Level.endingLevel(wizard, getEnemy(), 2);
             }
@@ -39,9 +37,9 @@ public class Level2 extends Level {
         swordOptional.ifPresent(s -> wizard.getInventory().removeItem(s));
     }
     private void learnPatronus(Wizard wizard) {
-        System.out.println("Congratulations on defeating the Basilisk! You have unlocked the ability to cast a Patronus.");
+        display.printMessage("Congratulations on defeating the Basilisk! You have unlocked the ability to cast a Patronus.");
         Patronus patronus = new Patronus(Game.readString("Enter to learn your Patronum and finish this second year! Remember, this spell will be useful later... Sooner than you imagine"), 50);
         wizard.getInventory().addItem(patronus);
-        System.out.println("You have learned to cast Expecto Patronum, and your Patronus has been added to your inventory.");
+        display.printMessage("You have learned to cast Expecto Patronum, and your Patronus has been added to your inventory.");
     }
 }

@@ -4,11 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="PATRONUS IMPLEMENTATION (testé et validé)">
+    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="level 3 and 4">
+      <change afterPath="$PROJECT_DIR$/COPY_HarryPotterAtHome_G3C_TOLEDANO.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Patronus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Patronus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Reward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Reward.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,15 +82,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "/Users/chloetoledano/IdeaProjects_JAVA/HarryPotterAtHome_G3C_TOLEDANO/src/main",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/copy hpah" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -175,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680054857671</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="level 3 and 4">
+      <created>1680056229277</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680056229277</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,17 +229,7 @@
     <MESSAGE value="Level5.java" />
     <MESSAGE value="Level7.java + creation of Voldemort wand" />
     <MESSAGE value="PATRONUS IMPLEMENTATION (testé et validé)" />
-    <option name="LAST_COMMIT_MESSAGE" value="PATRONUS IMPLEMENTATION (testé et validé)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/game/Game.java</url>
-          <line>140</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="level 3 and 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="level 3 and 4" />
   </component>
 </project>

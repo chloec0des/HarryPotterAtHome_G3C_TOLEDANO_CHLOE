@@ -16,8 +16,8 @@ public class Level7 extends Level {
         super("Level 7", "Hogwarts", new Enemy("Voldemort", 80, 250));
     }
     public void playLevel(Wizard wizard) {
-        System.out.println("Welcome back to " + getLocation() + "!");
-        System.out.println("You have finally reached your last year, where Voldemort awaits you.");
+        display.printMessage("Welcome back to " + getLocation() + "!");
+        display.printMessage("You have finally reached your last year, where Voldemort awaits you.");
 
         // Perform level-specific gameplay mechanics here
         Wand voldemortWand = generateVoldemortWand();
@@ -48,18 +48,18 @@ public class Level7 extends Level {
         Core wizardCore = wizard.getWand().getCore();
         Core voldemortCore = generateVoldemortWand().getCore();
         if (wizardCore == voldemortCore) {
-            System.out.println("Your chance of winning against Voldemort is now 50% because you have the same core.");
+            display.printMessage("Your chance of winning against Voldemort is now 50% because you have the same core.");
             Random random = new Random();
             boolean wizardWins = random.nextBoolean();
-            Game.anythingToContinue();
+            Display.anythingToContinue();
             if (wizardWins) {
-                System.out.println("You have defeated Voldemort! Congratulations!");
+                display.printMessage("You have defeated Voldemort! Congratulations!");
                 Level.endingLevel(wizard, enemy, 7);
             } else {
-                System.out.println("Unfortunately, Voldemort has defeated you. Game over!");
+                display.printMessage("Unfortunately, Voldemort has defeated you. Game over!");
             }
         } else {
-            System.out.println("You face Voldemort in the final battle!");
+            display.printMessage("You face Voldemort in the final battle!");
             Spell spell = new Spell("Expelliarmus", 80, 50);
             Level.battle(wizard, enemy, spell, Optional.empty());
             if (wizard.getHealthPoints() > 0) {
@@ -67,11 +67,11 @@ public class Level7 extends Level {
                 Potion chosenPotion = Potion.choosePotion();
                 chosenPotion.use(wizard);
                 if (enemy.getHealthPoints() <= 0) {
-                    System.out.println("You have defeated Voldemort! Congratulations!");
+                    display.printMessage("You have defeated Voldemort! Congratulations!");
                     Level.endingLevel(wizard, enemy, 7);
                 }
             } else {
-                System.out.println("Unfortunately, Voldemort has defeated you. Game over!");
+                display.printMessage("Unfortunately, Voldemort has defeated you. Game over!");
             }
         }
     }

@@ -1,7 +1,7 @@
 package items;
 public class Patronus extends Item {
     private int strength;
-
+    
     public Patronus(String name, int strength) {
         super(name);
         this.strength = strength;
@@ -12,7 +12,7 @@ public class Patronus extends Item {
     }
 
     public void use() {
-        System.out.println("Expecto Patronum!");
-        System.out.println("Your " + getName() + " Patronus has appeared and repelled the Dementors.");
+        display.printMessage("Expecto Patronum!");
+        display.printMessage("Your " + getName() + " Patronus has appeared and repelled the Dementors.");
     }
 }

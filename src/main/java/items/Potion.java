@@ -1,9 +1,11 @@
 package items;
 
 import characters.Wizard;
+import org.game.Display;
 import org.game.Game;
 public class Potion {
     private int healAmount;
+    static Display display = new Display();
 
     public Potion(int healAmount) {
 
@@ -23,9 +25,9 @@ public class Potion {
     }
 
     public static Potion choosePotion() {
-        System.out.println("Choose a potion to use:");
-        System.out.println("1. Small healing potion ");
-        System.out.println("2. Elixir of Invincibility ");
+        display.printMessage("Choose a potion to use:");
+        display.printMessage("1. Small healing potion ");
+        display.printMessage("2. Elixir of Invincibility ");
 
         int choice = Game.readInt("Enter your choice (1-2): ", 2);
         Potion potion;
