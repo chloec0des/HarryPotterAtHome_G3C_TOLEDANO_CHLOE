@@ -19,7 +19,7 @@ public class Level3 extends Level {
         display.printMessage("You have entered the " + getLocation() + ", but a Dementor is lurking in the shadows.");
 
         // Level-specific mechanics here
-        Spell spell = new Spell("Expecto Patronum", 40, 30);
+        Spell spell = new Spell("Expecto Patronum", 40, 70);
         if (wizard.getInventory().getItemByType(Patronus.class) == null) {
             display.printMessage("You don't have a Patronus yet. Go back to Level 2 to learn how to cast one.");
             Level2 level2 = new Level2();
@@ -36,6 +36,7 @@ public class Level3 extends Level {
                 display.printMessage("You have been defeated. Game over!");
                 return;
             }
+            Level.choiceIncrease(wizard, spell);
             display.printMessage("You successfully cast Expecto Patronum and drove the Dementor away from the Forbidden Forest!");
             Level.endingLevel(wizard, getEnemy(), 3);
         }

@@ -20,7 +20,7 @@ public class Level5 extends Level {
         display.printMessage("You are facing a powerful " + getEnemy().getName() + " that has appeared!");
 
         // Perform level-specific gameplay mechanics here
-        Spell spell = new Spell("Stupefy", 50, 40);
+        Spell spell = new Spell("Stupefy", 50, 70);
         while (getEnemy().getHealthPoints() > 0) {
             Level.battle(wizard, super.getEnemy(), spell, Optional.empty());
             if (wizard.getHealthPoints() <= 0) {

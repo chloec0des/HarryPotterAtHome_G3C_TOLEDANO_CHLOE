@@ -4,29 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="level 3 and 4">
-      <change afterPath="$PROJECT_DIR$/COPY_HarryPotterAtHome_G3C_TOLEDANO.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="Display class to remove all System.Out.Println">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Patronus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Patronus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Potion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Reward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Reward.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/SortingHat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680056229277</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Display class to remove all System.Out.Println">
+      <created>1680204703335</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680204703335</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +218,7 @@
     <MESSAGE value="Level7.java + creation of Voldemort wand" />
     <MESSAGE value="PATRONUS IMPLEMENTATION (testé et validé)" />
     <MESSAGE value="level 3 and 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="level 3 and 4" />
+    <MESSAGE value="Display class to remove all System.Out.Println" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display class to remove all System.Out.Println" />
   </component>
 </project>
