@@ -32,8 +32,8 @@ public class Inventory {
         }
         return null;
     }
-    public void addPatronus(Patronus patronus) {
-        items.add(patronus);
+    public int getSize() {
+        return items.size();
     }
     public void printInventory() {
         System.out.println("Inventory:");
@@ -41,6 +41,14 @@ public class Inventory {
             String itemName = item instanceof Patronus ? "Patronus" : item.getName();
             System.out.println("- " + itemName);
         }
+    }
+    public boolean hasItem(String itemName) {
+        for (Item item : items) {
+            if (item.getName().equals(itemName)) {
+                return true;
+            }
+        }
+        return false;
     }
 
 

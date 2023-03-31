@@ -79,11 +79,17 @@ public class Wizard extends Character {
         setHealthPoints(Math.max(getHealthPoints() - finalDamage, 0));
     }
 
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
+    }
 
     public House getHouse() {
         return house;
     }
     public Wand getWand() {
         return wand;
+    }
+    public Pet getPet() {
+        return pet;
     }
 }

@@ -15,14 +15,13 @@ public class Level1 extends Level {
 
         super("Hogwarts School of Witchcraft and Wizardry", "The dungeon toilets",  new Enemy("Troll", 20, 50));
     }
-
     public void playLevel(Wizard wizard) {
-        display.printMessage("Welcome to " + Game.wizard.getName() + " at " + getLocation() + "!");
-        display.printMessage("You are facing a wild " + super.getEnemy().getName() + " that has appeared!");
+        display.printMessage("Welcome to " + wizard.getName() + " at " + getLocation() + "!");
+        display.printMessage("You are facing a wild " + getEnemy().getName() + " that has appeared!");
 
         // Perform level-specific gameplay mechanics here
         Spell spell = new Spell("Wingardium Leviosa", 25, 60);
-        battle(wizard, super.getEnemy(), spell, Optional.empty());
+        battle(wizard, getEnemy(), spell, Optional.empty());
         if (wizard.getHealthPoints() > 0) {
             Level.choiceIncrease(wizard, spell);
             if (getEnemy().getHealthPoints() <= 0) {
@@ -36,6 +35,5 @@ public class Level1 extends Level {
                 display.anythingToContinue();
             }
         }
-
     }
 }

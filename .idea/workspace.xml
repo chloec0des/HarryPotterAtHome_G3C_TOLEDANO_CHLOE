@@ -4,18 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="small changes">
+    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="Implementation of rewards">
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/AbstractSpellTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/CoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/HouseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/InventoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/PatronusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/PetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/PotionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/RewardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/SortingHatTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/SpellTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/SwordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/WandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/DisplayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/GameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level4Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/Level5Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/game/LevelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Fireworks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/characters/Wizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/items/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Reward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Reward.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Patronus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Patronus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +91,8 @@
     "last_opened_file_path": "/Users/chloetoledano/IdeaProjects_JAVA/HarryPotterAtHome_G3C_TOLEDANO/src/main",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -208,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680205490377</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Implementation of rewards">
+      <created>1680259385243</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680259385243</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +259,7 @@
     <MESSAGE value="level 3 and 4" />
     <MESSAGE value="Display class to remove all System.Out.Println" />
     <MESSAGE value="small changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
+    <MESSAGE value="Implementation of rewards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of rewards" />
   </component>
 </project>

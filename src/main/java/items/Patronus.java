@@ -6,13 +6,9 @@ public class Patronus extends Item {
         super(name);
         this.strength = strength;
     }
-
     public int getStrength() {
         return strength;
     }
 
-    public void use() {
-        display.printMessage("Expecto Patronum!");
-        display.printMessage("Your " + getName() + " Patronus has appeared and repelled the Dementors.");
-    }
+
 }
