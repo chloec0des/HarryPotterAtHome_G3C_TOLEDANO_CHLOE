@@ -2,10 +2,7 @@ package org.game;
 
 import characters.Enemy;
 import characters.Wizard;
-import items.Core;
-import items.Potion;
-import items.Spell;
-import items.Wand;
+import items.*;
 
 import java.util.Optional;
 import java.util.Random;
@@ -69,6 +66,15 @@ public class Level7 extends Level {
                 if (enemy.getHealthPoints() <= 0) {
                     display.printMessage("You have defeated Voldemort! Congratulations!");
                     Level.endingLevel(wizard, enemy, 7);
+                    display.printMessage("You won the entire game and received some gifts along the way for you to collect! It was a pleasure to have you!");
+                    display.anythingToContinue();
+                    // Add reward to inventory
+                    Reward reward = new Reward("an invisibility cloak");
+                    wizard.getInventory().addItem(reward);
+                    display.printMessage("You have received " + reward.getReward() + " as a reward.");
+                    Inventory inventory = wizard.getInventory();
+                    inventory.printInventory();
+
                 }
             } else {
                 display.printMessage("Unfortunately, Voldemort has defeated you. Game over!");

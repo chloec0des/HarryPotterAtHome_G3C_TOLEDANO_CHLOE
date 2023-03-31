@@ -2,6 +2,8 @@ package org.game;
 
 import characters.Enemy;
 import characters.Wizard;
+import items.Inventory;
+import items.Reward;
 import items.Spell;
 
 import java.util.Optional;
@@ -22,6 +24,13 @@ public class Level4 extends Level {
 
         if (wizard.getHealthPoints() > 0) {
             Level.choiceIncrease(wizard, spell);
+            display.anythingToContinue();
+            Reward reward = new Reward("a Howler card");
+            wizard.getInventory().addItem(reward);
+            display.printMessage("You have received " + reward.getReward() + " as a reward.");
+            Inventory inventory = wizard.getInventory();
+            inventory.printInventory();
+            display.anythingToContinue();
             if (getEnemy().getHealthPoints() <= 0) {
                 display.printMessage("You successfully cast Accio and retrieved. You have been transported to the next level!");
                 Level5 level5 = new Level5();

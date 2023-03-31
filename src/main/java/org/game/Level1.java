@@ -3,6 +3,8 @@ package org.game;
 import characters.Enemy;
 import characters.Wizard;
 
+import items.Inventory;
+import items.Reward;
 import items.Spell;
 
 import java.util.Optional;
@@ -25,6 +27,13 @@ public class Level1 extends Level {
             Level.choiceIncrease(wizard, spell);
             if (getEnemy().getHealthPoints() <= 0) {
                 Level.endingLevel(wizard, getEnemy(), 1);
+                display.anythingToContinue();
+                Reward reward = new Reward(" a golden snitch");
+                wizard.getInventory().addItem(reward);
+                display.printMessage("You have received " + reward.getReward() + " as a reward.");
+                Inventory inventory = wizard.getInventory();
+                inventory.printInventory();
+                display.anythingToContinue();
             }
         }
 

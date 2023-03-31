@@ -2,6 +2,8 @@ package org.game;
 
 import characters.Enemy;
 import characters.Wizard;
+import items.Inventory;
+import items.Reward;
 import items.Spell;
 import items.Patronus;
 
@@ -39,6 +41,13 @@ public class Level3 extends Level {
             Level.choiceIncrease(wizard, spell);
             display.printMessage("You successfully cast Expecto Patronum and drove the Dementor away from the Forbidden Forest!");
             Level.endingLevel(wizard, getEnemy(), 3);
+            display.anythingToContinue();
+            Reward reward = new Reward("a Broomstick, the Nimbus 2000");
+            wizard.getInventory().addItem(reward);
+            display.printMessage("You have received " + reward.getReward() + " as a reward.");
+            Inventory inventory = wizard.getInventory();
+            inventory.printInventory();
+            display.anythingToContinue();
         }
     }
 }

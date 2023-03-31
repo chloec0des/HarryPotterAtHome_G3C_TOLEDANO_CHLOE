@@ -2,6 +2,8 @@ package items;
 
 import java.util.ArrayList;
 
+import static org.game.Game.wizard;
+
 public class Inventory {
     private ArrayList<Item> items;
 
@@ -33,5 +35,13 @@ public class Inventory {
     public void addPatronus(Patronus patronus) {
         items.add(patronus);
     }
+    public void printInventory() {
+        System.out.println("Inventory:");
+        for (Item item : getItems()) {
+            String itemName = item instanceof Patronus ? "Patronus" : item.getName();
+            System.out.println("- " + itemName);
+        }
+    }
+
 
 }

@@ -2,9 +2,8 @@ package org.game;
 
 import characters.Enemy;
 import characters.Wizard;
-import items.Fireworks;
 import items.Inventory;
-import items.Potion;
+import items.Reward;
 import items.Spell;
 
 import java.util.Optional;
@@ -31,13 +30,18 @@ public class Level5 extends Level {
 
         Level.choiceIncrease(wizard, spell);
 
-        // Add fireworks to inventory
-        Inventory inventory = wizard.getInventory();
-        inventory.addItem(new Fireworks("Fireworks"));
-
         display.printMessage("You defeated " + getEnemy().getName() + " and found some fireworks! Let's party! 🎉");
 
         Level.endingLevel(wizard, getEnemy(), 5);
+        display.anythingToContinue();
+        // Add fireworks to inventory
+        Reward reward = new Reward("some Fireworks");
+        wizard.getInventory().addItem(reward);
+        display.printMessage("You have received " + reward.getReward() + " as a reward.");
+        // Add fireworks to inventory
+        Inventory inventory = wizard.getInventory();
+        inventory.printInventory();
+        display.anythingToContinue();
     }
 
 

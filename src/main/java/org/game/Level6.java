@@ -2,7 +2,9 @@ package org.game;
 
 import characters.Enemy;
 import characters.Wizard;
+import items.Inventory;
 import items.Potion;
+import items.Reward;
 import items.Spell;
 
 import java.util.Optional;
@@ -42,6 +44,14 @@ public class Level6 extends Level {
 
         if (getEnemy().getHealthPoints() <= 0) {
             Level.endingLevel(wizard, getEnemy(), 6);
+            display.anythingToContinue();
+            // Add reward to inventory
+            Reward reward = new Reward("an invisibility cloak");
+            wizard.getInventory().addItem(reward);
+            display.printMessage("You have received " + reward.getReward() + " as a reward.");
+            Inventory inventory = wizard.getInventory();
+            inventory.printInventory();
+            display.anythingToContinue();
         }
     }
 }

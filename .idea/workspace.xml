@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="Display class to remove all System.Out.Println">
+    <list default="true" id="8a0dfc43-d9a4-4fa9-96bf-10bc83e485e5" name="Changes" comment="small changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Fireworks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Reward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Reward.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/game/Level7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680204703335</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="small changes">
+      <created>1680205490377</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680205490377</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +234,7 @@
     <MESSAGE value="PATRONUS IMPLEMENTATION (testé et validé)" />
     <MESSAGE value="level 3 and 4" />
     <MESSAGE value="Display class to remove all System.Out.Println" />
-    <option name="LAST_COMMIT_MESSAGE" value="Display class to remove all System.Out.Println" />
+    <MESSAGE value="small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
   </component>
 </project>

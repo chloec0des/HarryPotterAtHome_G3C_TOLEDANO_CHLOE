@@ -32,6 +32,13 @@ public class Level2 extends Level {
                 display.printMessage("You have successfully defeated the Basilisk!");
                 learnPatronus(wizard);
                 Level.endingLevel(wizard, getEnemy(), 2);
+                display.anythingToContinue();
+                Reward reward = new Reward(" a choco frog");
+                wizard.getInventory().addItem(reward);
+                display.printMessage("You have received " + reward.getReward() + " as a reward.");
+                Inventory inventory = wizard.getInventory();
+                inventory.printInventory();
+                display.anythingToContinue();
             }
         }
         swordOptional.ifPresent(s -> wizard.getInventory().removeItem(s));
